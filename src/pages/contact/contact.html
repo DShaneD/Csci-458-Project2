@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+  <h3 class="volume">Volume</h3>
+  <div class="volume">
+    Value: {{volume}}
+  </div>
+  <ion-range min="0" max="100" [(ngModel)]="volume" color="red">
+    <ion-icon range-left name="volume-down"></ion-icon>
+    <ion-icon range-right name="volume-up"></ion-icon>
+  </ion-range>
+     
+  <h3 class="brightness">Brightness</h3>
+  <div class="brightness">
+    Value: {{brightness}}
+  </div>
+  <ion-range min="0" max="100" [(ngModel)]="brightness" color="blue">
+    <ion-icon small range-left name="sunny"></ion-icon>
+    <ion-icon range-right name="sunny"></ion-icon>
+  </ion-range>
+ 
+  <h3 class="enjoy">Enjoyment</h3>
+  <div class="enjoy">
+    Value: {{enjoyment}}
+  </div>
+  <ion-range min="0" max="100" [(ngModel)]="enjoyment" color="green">
+    <ion-icon range-left name="sad"></ion-icon>
+    <ion-icon range-right name="happy"></ion-icon>
+  </ion-range>
+    
+</ion-content>
